@@ -4,8 +4,8 @@ function tabuada(){
   var tabuada='';
 
   for(var count=1; count<=10 ; count++)
-   tabuada += num+" x "+count+" = "+
-               num*count+"<br />";
+   tabuada += num + " x "+ count +" = "+
+               num * count +"<br />";
   
   resposta.innerHTML = tabuada;
 }
