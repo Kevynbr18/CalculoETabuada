@@ -1,0 +1,185 @@
+body {
+  background: #202124;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  gap: 20px;
+}
+
+.container {
+  background: #303134;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  width: 300px;
+  text-align: center;
+}
+
+#display {
+  width: 90%;
+  height: 40px;
+  margin: 10px 0;
+  text-align: right;
+  font-size: 24px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #444;
+  color: #fff;
+}
+
+.calculadora {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.btn {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background: #5f6368;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #7b7e83;
+}
+
+.btnT {
+  color: #000;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 30px;
+  background: #b3b3b3;
+}
+
+.btnT a {
+  color: #000;
+  text-decoration: none;
+}
+
+.igual {
+  background: #4285f4;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+#toggleMode {
+  background: #34a853;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#toggleMode:hover {
+  background: #2c8c45;
+}
+
+footer {
+  text-align: center;
+  background: #ccc;
+  color: #000;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 600px) {
+  /* Ajustando o tamanho da container para telas menores */
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  /* Ajustando o display para um tamanho mais confortável */
+  #display {
+    font-size: 20px;
+    height: 35px;
+  }
+
+  /* Ajustando o grid da calculadora */
+  .calculadora {
+    grid-template-columns: repeat(4, 1fr); /* Mantém 4 colunas, mas ajusta o tamanho dos botões */
+    gap: 6px;
+  }
+
+  /* Ajuste no tamanho dos botões */
+  .btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .btnT {
+    padding: 15px;
+    margin: 20px;
+    font-size: 18px;
+  }
+
+  /* Botão de igual tem o mesmo tamanho, mas ocupa 2 colunas */
+  .igual {
+    grid-column: span 2;
+  }
+
+  /* Ajustando o botão de alternância */
+  #toggleMode {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  footer {
+    padding: 5px 0;
+    font-size: 12px;
+  }
+}
+
+/* Media Query para dispositivos ainda menores (smartphones muito compactos) */
+@media (max-width: 400px) {
+  /* Ajustes adicionais para telas pequenas */
+  .container {
+    width: 95%;
+  }
+
+  #display {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btnT {
+    font-size: 16px;
+    padding: 12px;
+    margin: 15px;
+  }
+
+  .igual {
+    grid-column: span 2;
+  }
+
+  #toggleMode {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+}

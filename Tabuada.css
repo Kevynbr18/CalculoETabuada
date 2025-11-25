@@ -1,0 +1,149 @@
+/* Resetando margens e paddings para garantir consistência no layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo para o body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #202124;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Título da página */
+h1 {
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Caixa de entrada para o número */
+input[type="number"] {
+  width: 100px;
+  padding: 10px;
+  font-size: 1em;
+  border: 2px solid #004402;
+  border-radius: 5px;
+  margin: 10px 0;
+  transition: border 0.3s;
+}
+
+input[type="number"]:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+/* Estilo do botão */
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #22c32a;
+}
+
+/* Estilo para o resultado da tabuada */
+.Respostas {
+  font-size: 1.0em;
+  padding: 1px;
+  background-color: #303134;
+  border: 1px solid #4CAF50;
+  border-radius: 5px;
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  line-height: 2;
+}
+
+#resposta {
+  font-size: 1.5em;
+  padding: 1px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+/* Estilo do footer */
+footer {
+  text-align: center;
+  background: #ccc;
+  color: #000;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  h1 {
+    font-size: 2em; /* Menor tamanho de fonte para o título */
+  }
+
+  /* Caixa de entrada se ajusta para ocupar mais espaço */
+  input[type="number"] {
+    width: 80%; /* A largura do input vai ocupar 80% da tela */
+    font-size: 1.2em;
+  }
+
+  /* Botão também ocupa mais espaço */
+  button {
+    width: 80%; /* O botão agora ocupa 80% da tela */
+    font-size: 1.2em;
+    padding: 15px;
+  }
+
+  /* Resultado da tabuada fica maior e mais centralizado */
+  .Respostas {
+    width: 90%; /* A largura das respostas é maior em telas pequenas */
+    font-size: 1.2em;
+  }
+
+  #resposta {
+    font-size: 1.2em; /* Ajuste na fonte para celulares */
+  }
+
+  /* Footer com mais espaçamento */
+  footer {
+    padding: 20px 10px;
+  }
+}
+
+/* Media Query para telas pequenas (até 400px de largura) */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.8em; /* Título ainda menor */
+  }
+
+  input[type="number"] {
+    width: 90%; /* Caixa de número ocupa quase toda a largura */
+  }
+
+  button {
+    width: 90%; /* Botão quase ocupa toda a tela */
+  }
+
+  .Respostas {
+    width: 90%; /* Respostas ocupam quase toda a tela */
+  }
+
+  footer {
+    font-size: 0.9em; /* Texto do footer menor */
+  }
+}

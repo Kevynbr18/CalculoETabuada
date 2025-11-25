@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Calculadora</h1>
+
+    <button id="toggleMode">Mudar para Científica</button>
+    <button class="btn" onclick="mostrarHistorico()">Histórico</button>
+    <input type="text" id="display" readonly>
+
+    <!-- MODO PADRÃO -->
+    <div id="padrao" class="calculadora">
+      
+      <button class="btn" onclick="limpar()">C</button>    
+      <button class="btn" onclick="apagar()">⌫</button>     
+      <button class="btn" onclick="inserir('/')">÷</button> 
+      <button class="btn" onclick="inserir('*')">×</button> 
+
+      <button class="btn" onclick="inserir('7')">7</button> 
+      <button class="btn" onclick="inserir('8')">8</button> 
+      <button class="btn" onclick="inserir('9')">9</button>
+      <button class="btn" onclick="inserir('-')">−</button> 
+
+      <button class="btn" onclick="inserir('4')">4</button>
+      <button class="btn" onclick="inserir('5')">5</button>
+      <button class="btn" onclick="inserir('6')">6</button>
+      <button class="btn" onclick="inserir('+')">+</button>
+
+      <button class="btn" onclick="inserir('1')">1</button>
+      <button class="btn" onclick="inserir('2')">2</button>
+      <button class="btn" onclick="inserir('3')">3</button>
+      <button class="btn igual" onclick="calcular()">=</button> 
+
+      <button class="btn zero" onclick="inserir('0')">0</button> 
+      <button class="btn" onclick="inserir('.')">.</button>     
+    </div>
+
+    <!-- MODO CIENTÍFICO -->
+    <div id="cientifica" class="calculadora" style="display:none;">
+      
+      <button class="btn" onclick="inserir('Math.sin(')">sin</button> 
+      <button class="btn" onclick="inserir('Math.cos(')">cos</button> 
+      <button class="btn" onclick="inserir('Math.tan(')">tan</button> 
+      <button class="btn" onclick="inserir('Math.sqrt(')">√</button>  
+
+      <button class="btn" onclick="inserir('Math.pow(')">xʸ</button>   
+      <button class="btn" onclick="inserir('Math.log10(')">log</button> 
+      <button class="btn" onclick="inserir('Math.PI')">π</button>      
+      <button class="btn" onclick="inserir('Math.E')">e</button>        
+
+      <button class="btn" onclick="inserir('(')">(</button>
+      <button class="btn" onclick="inserir(')')">)</button> 
+
+      <button class="btn igual" onclick="calcular()">=</button> 
+      <button class="btn" onclick="limpar()">C</button> 
+    </div>
+    <button class="btnT"><a href="Tabuada.html">Tabuada</a></button>
+
+</div>
+
+<footer>Todos os direitos para Kevyn Bruno</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
