@@ -35,11 +35,11 @@ body {
 .calculadora {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
+  gap: 2px;
 }
 
 .btn {
-  padding: 15px;
+  padding: 20px;
   font-size: 18px;
   border: none;
   border-radius: 5px;
@@ -53,12 +53,27 @@ body {
   background: #7b7e83;
 }
 
+.BtnH{
+ background: #34a853;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.BtnH:hover {
+  background: #2c8c45;
+}
+
 .btnT {
-  color: #000;
   border-radius: 20px;
   padding: 20px;
   margin: 30px;
-  background: #b3b3b3;
+  background: #34a853;
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .btnT a {
@@ -82,6 +97,7 @@ body {
   color: white;
   margin-bottom: 10px;
   cursor: pointer;
+  
 }
 
 #toggleMode:hover {
