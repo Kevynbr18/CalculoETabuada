@@ -4,7 +4,7 @@ const modoCientifico = document.getElementById('cientifica');
 const toggleBtn = document.getElementById('toggleMode');
 
 let cientificaAtiva = false;
-let historico = []; // 🔥 Histórico dos cálculos
+let historico = []; // Histórico dos cálculos
 
 //--------------------------------------------
 // INSERIR VALOR
@@ -155,3 +155,4 @@ document.addEventListener("keydown", function (event) {
     inserir(tecla);
   }
 });
+
